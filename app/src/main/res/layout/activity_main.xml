@@ -94,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/score_keeper_title"
+        app:layout_constraintTop_toBottomOf="@+id/red_team_score_text"
         app:layout_constraintVertical_bias="0.837" />
 
     <Button
@@ -103,7 +103,7 @@
         android:layout_height="75dp"
         android:layout_gravity="left"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginVertical="100dp"
+        android:layout_marginVertical="50dp"
         android:backgroundTint="@color/red_team"
         android:text="Add To Red Team"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -115,7 +115,7 @@
         android:layout_height="75dp"
         android:layout_gravity="right"
         android:layout_marginHorizontal="15dp"
-        android:layout_marginVertical="100dp"
+        android:layout_marginVertical="50dp"
         android:backgroundTint="@color/blue_team"
         android:text="Add To Blue Team"
         app:layout_constraintBottom_toBottomOf="parent"

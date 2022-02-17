@@ -6,14 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Title -->
     <TextView
         android:id="@+id/score_keeper_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Basketball Score Keeper"
         android:textAlignment="center"
+        android:text="Basketball Score Keeper"
         android:textSize="50dp"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +24,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.024" />
 
+    <!-- Team score components -->
     <TextView
         android:id="@+id/red_team_score_label"
         android:layout_width="wrap_content"
@@ -30,6 +33,7 @@
         android:layout_marginVertical="50dp"
         android:layout_marginStart="16dp"
         android:text="Red Team Score"
+        android:textColor="@color/red_team"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/add_red_score_button"
@@ -44,20 +48,10 @@
         android:layout_marginHorizontal="70dp"
         android:layout_marginVertical="10dp"
         android:text="0"
+        android:textColor="@color/red_team"
         android:textSize="75dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/red_team_score_label" />
-
-    <TextView
-        android:id="@+id/blue_team_score_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="70dp"
-        android:layout_marginVertical="10dp"
-        android:text="0"
-        android:textSize="75dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/blue_team_score_label" />
 
     <TextView
         android:id="@+id/blue_team_score_label"
@@ -66,6 +60,7 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginVertical="50dp"
         android:text="Blue Team Score"
+        android:textColor="@color/blue_team"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/add_blue_score_button"
@@ -74,11 +69,25 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:id="@+id/blue_team_score_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginVertical="10dp"
+        android:text="0"
+        android:textColor="@color/blue_team"
+        android:textSize="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blue_team_score_label" />
+
+    <!-- Increase Score components -->
+    <TextView
         android:id="@+id/increase_score_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
         android:text="Increase Score By:"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/spinner_score_interval"
@@ -90,6 +99,7 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_marginVertical="25dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/add_red_score_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -97,6 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/red_team_score_text"
         app:layout_constraintVertical_bias="0.837" />
 
+    <!-- Add score buttons -->
     <Button
         android:id="@+id/add_red_score_button"
         android:layout_width="150dp"
